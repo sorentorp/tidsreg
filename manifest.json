@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Tidsregistreringshjælper",
+  "version": "1.0",
+  "description": "Hjælper med at udfylde tidsregistreringsfelter",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"  
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://tid.aarhuskommune.dk/da/quick_entry*", "https://tid.aarhuskommune.dk/da/quick_entry/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

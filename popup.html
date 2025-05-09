@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Tidsregistreringshjælper</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 250px;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        #autoFillCheckbox {
+            width: auto;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <label for="hoursPerWeek">Timer pr. uge:</label>
+    <input type="number" id="hoursPerWeek" value="37">
+
+    <button id="fillTimes">Udfyld timer</button>
+
+    <label for="autoFill">Autofyld ved indlæsning:</label>
+    <input type="checkbox" id="autoFillCheckbox">
+
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
